@@ -35,6 +35,20 @@ h2{
   font-size: 17px;
 }
 
+.topnav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 200ms;
+}
+
+.topnav a:hover ::before{
+  width: 100%;
+}
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
