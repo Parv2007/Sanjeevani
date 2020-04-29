@@ -8,41 +8,66 @@
     <script defer src = "https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Sanjeevani Polyclinic and Fitness centre</title>
     <style>
- body {
-  background-image: url(healthcare.jpg); 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+  body {
+    background-image: url(healthcare.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
 }
         
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-image: url(healthcare.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 .topnav a {
-  float: left;
   display: block;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  display: inline-block;
+  margin-right: 70px;
+  padding: 25px;
+  position: relative;
+  color: white;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .topnav a.active {
-  background-color: rgb(204,204,0);
-  color: white;
+  color: yellow;
 }
 
 .topnav .icon {
   display: none;
+}
+
+.topnav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+.topnav a:hover::before {
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -72,8 +97,8 @@
   src: url(Sansation_Light.ttf);
 }
 
-button {
-        background-color: white;
+ button {
+ background-color: white;
  border-radius: 100%;
  padding: 0px;
  cursor: pointer;
@@ -91,24 +116,24 @@ button {
 #content {
     display: none;
 }
-</style>
-<script src = "wow.min.js"></script>
-<script>
-new WOW().init()
-</script>
+    </style>
+     <script src = "wow.min.js"></script>
+     <script>
+     new WOW().init()
+     </script>
 </head>
-<body style = "font-family: myFirstFont;">
+<body style = "font-family: myFirstFont;"><header>
   <div class="topnav" id="myTopnav" style = "font-family: myFirstFont">
-    <a href="index.html" title = "Home page">Home</a>
-    <a href = "Coronavirusstats.html" title = "Cooronavirus stats">COVID-19 stats</a>
-    <a href="About.html" title = "About">About</a>
-    <a title = "Our reviews on google" href = "Reviews.html" class = "active"><button><i class="fas fa-comments"></i></button></a>
-    <a title = "Diet counselling plans" href = "Plans.html">Diet counselling plans</a>
-    <a href = "Contact form.html" title = "Contact form">Contact form</a>
+    <a href="index.html" title = "Home page"><span style = "visibility: hidden;">Pa</span>Home</a>
+    <a href = "Coronavirusstats.html" title = "Cooronavirus stats"><span style = "visibility: hidden;">Pa</span>COVID-19 stats</a>
+    <a href="About.html" title = "About"><span style = "visibility: hidden;">Pa</span>About</a>
+    <a title = "Our reviews on google" href = "Reviews.html" class = "active"><span style = "visibility: hidden;">Pa</span><button><i class="fas fa-comments"></i></button></a>
+    <a title = "Diet counselling plans" href = "Plans.html"><span style = "visibility: hidden;">Pa</span>Diet counselling plans</a>
+    <a href = "Contact form.html" title = "Contact form"><span style = "visibility: hidden;">Pa</span>Contact form</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-  </div>
+  </div></header>
   <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
