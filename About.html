@@ -64,7 +64,16 @@ header::after{
     width: 0%;
     transition: all ease-in-out 250ms;
 }
-
+.topnav a.active::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 .topnav a:hover::before {
     width: 100%;
 }

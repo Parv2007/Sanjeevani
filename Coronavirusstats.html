@@ -45,6 +45,17 @@ header::after{
   color: yellow;
 }
 
+.topnav a.active::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .topnav .icon {
   display: none;
 }
