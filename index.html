@@ -127,6 +127,57 @@ header::after{
 #content {
     display: none;
 }
+
+::placeholder{
+  color: white;
+}
+
+.search-box{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            left: 50%;
+            top: 50%;
+            background-color: orange;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+            color: orange;
+        }
+
+        .search-btn{
+            color: black;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+        }
+
+        .search-txt{
+            border: none;
+            background-color: orange;
+            outline: none;
+            float: right;
+            padding: 0;
+            color: orange;
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 40px;
+            width: 0px;
+        }
+
+        .search-box:hover > .search-txt{
+            width: 240px;
+            padding: 0 6px; 
+        }
+
+        .search-box:hover > .search-btn{
+            background-color: white;
+        }
     </style>
      <script src = "wow.min.js"></script>
      <script>
@@ -142,22 +193,26 @@ header::after{
     <a title = "Our reviews on google" href = "Reviews.html"><span style = "visibility: hidden;">Pa</span><button><i class="fas fa-comments"></i></button></a>
     <a title = "Diet counselling plans" href = "Plans.html"><span style = "visibility: hidden;">Pa</span>Diet counselling plans</a>
     <a href = "Contact form.html" title = "Contact form">  <span style = "visibility: hidden;">Pa</span>Contact form</a>
+    <a> <br>    <span style = "visibility: hidden;">Hello! bello! kello! </span><div class = "search-box">
+      <form action = "http://localhost/Search bar/search.php" method = "POST"><div class = "search-box">
+      <input class = "search-txt" type = "text" name = "search" placeholder = "Search" style = "color: white;">
+      <button type = "submit" class = "search-btn" name = "submit-search" style = "border: none;"><i class="fas fa-search icon-2x"></i></button></div>
+      </form>
+      </div></a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
   </div></header>
     
-        <p align = "center" style = "font-size: 500%; color: white;" class = "wow bounce"><b>Sanjeevani Polyclinic and Fitness centre</b></p>
-        <p align = "center" style = "font-size: 200%; color: white;" class = "wow bounce"><b>Doctors for the community</b></p><br><br><br><br>
-        <center><img src = "healthcare2.gif" class = "wow bounceIn"></center>
-        <h2 align = "center" style = "font-size: 500%; color: white;" class = "wow bounce">We care</h2>
+  <p align = "center" style = "font-size: 500%; color: white;" class = "wow bounce"><b>Sanjeevani Polyclinic and Fitness centre</b></p>
+  <p align = "center" style = "font-size: 200%; color: white;" class = "wow bounce"><b>Doctors for the community</b></p><br><br><br><br><br><br><br>
+  <center><img src = "healthcare2.gif" class = "wow bounceIn"></center>
+  <h2 align = "center" style = "font-size: 500%; color: white;" class = "wow bounce">We care</h2>
     <br>
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-8322eadf-81c4-4495-8b35-ddeb35b23d08"></div>
    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
    <div class="elfsight-app-7ee2c060-d3be-458d-b2af-6fcc83fc008d"></div></div>
-   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-2838304d-af9a-49ee-ade8-ca785fbeab3c"></div>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-06930125-eb97-40b4-93f0-c332eb56dec0"></div></div>
       <script>
