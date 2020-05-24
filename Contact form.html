@@ -8,6 +8,7 @@
 <style>
   body {
     background-color: black;
+    font-family: myFirstFont;
 }
 
 header::after{
@@ -18,7 +19,7 @@ header::after{
         
 .topnav {
   overflow: hidden;
-  background-color: black;
+  background-color: #000000;
 }
 
 .topnav a {
@@ -26,7 +27,7 @@ header::after{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   display: inline-block;
   margin-right: 70px;
   padding: 25px;
@@ -36,8 +37,23 @@ header::after{
     text-transform: uppercase;
 }
 
+.topnav img {
+  vertical-align: center;
+}
+
 .topnav a.active {
   color: yellow;
+}
+
+.topnav a.active::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .topnav .icon {
@@ -80,12 +96,7 @@ header::after{
     display: block;
     text-align: left;
   }
-}
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(Sansation_Light.ttf);
-}
+} 
 
  button {
  background-color: white;
@@ -125,9 +136,8 @@ header::after{
    </head>
    <body style = "font-family: myFirstFont; color: black"><header>
        <div class="topnav" id="myTopnav" style = "font-family: myFirstFont">
-           <a href="index.html"><span style = "visibility: hidden;">Pa</span>Home</a>
-           <a href = "Coronavirusstats.html"><span style = "visibility: hidden;">Pa</span>COVID-19 stats</a>
-           <a href="About.html"><span style = "visibility: hidden;">Pa</span>About</a>
+           <a href="index.html"><span style = "visibility: hidden;">Pa</span><img src = "Home.jpg" width = "40px" height = "40px">  Home</a>
+           <a href="About.html"><span style = "visibility: hidden;">Pa</span><img src = "About.jpg" width = "40px" height = "40px">  About</a>
            <a title = "Our reviews on google" href = "Reviews.html"><span style = "visibility: hidden;">Pa</span><button><i class="fas fa-comments"></i></button></a>
            <a title = "Diet counselling plans" href = "Plans.html"><span style = "visibility: hidden;">Pa</span>Diet counselling plans</a>
            <a href = "Contact form.html" class = "active"><span style = "visibility: hidden;">Pa</span>Contact form</a>
@@ -138,13 +148,8 @@ header::after{
          <div style = "color: white; background-color: black;">
           <script src="https://apps.elfsight.com/p/platform.js" defer></script>
           <div class="elfsight-app-58c091f2-8639-491d-b698-fc8201f3e3e7"></div>
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div class="elfsight-app-8322eadf-81c4-4495-8b35-ddeb35b23d08"></div>
-          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-          <div class="elfsight-app-7ee2c060-d3be-458d-b2af-6fcc83fc008d"></div></div>
-<div class="elfsight-app-2838304d-af9a-49ee-ade8-ca785fbeab3c"></div>
-
          </div>
+         <center><a target = "_blank" href = "https://wa.me/919873204970"><button style = "width: 75px; height: 75px; background-color: white; border: none;" ><img src = "WhatsApp.jpg" width = "60px" height = "60px"></button></a></center></div>
          <script>
           function myFunction() {
             var x = document.getElementById("myTopnav");

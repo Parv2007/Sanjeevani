@@ -8,11 +8,7 @@
     <link rel = "stylesheet" href = "animate.css">
     <style>
  body {
-  background-image: url(healthcare.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+   background-color: black;
 }
 
 header::after{
@@ -23,11 +19,7 @@ header::after{
         
 .topnav {
   overflow: hidden;
-  background-image: url(healthcare.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-color: #000000;
 }
 
 .topnav a {
@@ -35,7 +27,7 @@ header::after{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   display: inline-block;
   margin-right: 70px;
   padding: 25px;
@@ -47,6 +39,17 @@ header::after{
 
 .topnav a.active {
   color: yellow;
+}
+
+.topnav a.active::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .topnav .icon {
@@ -64,16 +67,7 @@ header::after{
     width: 0%;
     transition: all ease-in-out 250ms;
 }
-.topnav a.active::before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: yellow;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
+
 .topnav a:hover::before {
     width: 100%;
 }
@@ -149,9 +143,8 @@ header::after{
 </head>
 <body style = "font-family: myFirstFont;"><header>
   <div class="topnav" id="myTopnav" style = "font-family: myFirstFont">
-    <a href="index.html"><span style = "visibility: hidden;">Pa</span>Home</a>
-    <a href = "Coronavirusstats.html"><span style = "visibility: hidden;">Pa</span>COVID-19 stats</a>
-    <a href="About.html" class = "active"><span style = "visibility: hidden;">Pa</span>About</a>
+    <a href="index.html"><span style = "visibility: hidden;">Pa</span><img src = "Home.jpg" width = "40px" height = "40px">  Home</a>
+    <a href="About.html" class = "active"><span style = "visibility: hidden;">Pa</span><img src = "About.jpg" width = "40px" height = "40px">  About</a>
     <a title = "Our reviews on google" href = "Reviews.html"><span style = "visibility: hidden;">Pa</span><button class = "button"><i class="fas fa-comments"></i></button></a>
     <a title = "Diet counselling plans" href = "Plans.html"><span style = "visibility: hidden;">Pa</span>Diet counselling plans</a>
     <a href = "Contact form.html"><span style = "visibility: hidden;">Pa</span>Contact form</a>
@@ -166,6 +159,7 @@ header::after{
     <p style = "font-size: 200%; font-family; myFirstFont; text-align: left;">Our clinic provides many services, ranging from the general ones to the specific ones, including dental and ENT service by Dr. Rakhi Maheshwari and Dr. Sachin Kumar Maheshwari repectively. We have too begun fitness councilling under Dr. Rakhi Maheshwari who is a qualified VLCC dietician too.</p>
     <img src = "Rakhi Maheshwari.jpeg" width = "175px" height = "250px" style = "float: left; padding: 16px; background-color: black;">  <div style = "padding: 16px; font-family: myFirstFont; background-color: black"><h1>Dr. Rakhi Gupta Maheshwari</h1><h2>Dentist and dietician, Noida</h2><p style = "font-size: 125%">Dr. Rakhi Maheshwari is an adept dentist and a dietician.<br> For dental consultation, she charges 200 while her charges vary for dietetics consultation, depending upon the service. She is usually available from 10:30 A.M. to 1 P.M. in the morning and from 6 P.M. to 8 P.M. in the evening. The download link of her pamphlet for cost referencing is <a href = "Sanjeevani Fitness Clinic.docx" style = "color: whitesmoke; text-decoration: none;"><b>this</b></a>.<br><br><a href = "https://wa.me/919873204970" target = "_blank"><button id = "button2" style = "background-color: green; color: white; font-family: myFirstFont; padding: 14px 25px; border: none; font-size: 110%; cursor: pointer;">Contact me through WhatsApp!</button> </a></p></div><br>
     <img src = "Sachin Kumar Maheshwari.jpeg" width = "175px" height = "250px" style = "float: left; padding: 16px; background-color: black;">  <div style = "padding: 16px; font-family: myFirstFont; background-color: black"><h1>Dr. Sachin Kumar Maheshwari</h1><h2>ENT Surgeon, Noida</h2><p style = "font-size: 125%">Dr. Sachin Kumar Maheshwari is an experienced otorhinolaryngologist.<br> His normal fees is rupees 300 while the emergency charge is rupees 500. He is usually available from 10A.M. to 1 P.M. in the morning and 6 P.M. to 9 P.M. in the evening.<br><br><a href = "https://wa.me/919873640770" target = "_blank"><button id = "button2" style = "background-color: green; color: white; font-family: myFirstFont; padding: 14px 25px; border: none; font-size: 110%; cursor: pointer;">Contact me through WhatsApp!</button> </a></p></div>
+    <center><a target = "_blank" href = "https://wa.me/919873204970"><button style = "width: 75px; height: 75px; background-color: white; border: none;" ><img src = "WhatsApp.jpg" width = "60px" height = "60px"></button></a></center></div>
   </div>
   <script>
     function myFunction() {
@@ -178,11 +172,5 @@ header::after{
     }
     </script>
     <div>
-      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-      <div class="elfsight-app-8322eadf-81c4-4495-8b35-ddeb35b23d08"></div>
-           <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-           <div class="elfsight-app-7ee2c060-d3be-458d-b2af-6fcc83fc008d"></div></div>
-<div class="elfsight-app-2838304d-af9a-49ee-ade8-ca785fbeab3c"></div>
-
 </body>
 </html>
